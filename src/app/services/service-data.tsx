@@ -1,0 +1,330 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
+
+export default function ServicesPage() {
+  return (
+    <main className="min-h-screen bg-gray-50">
+      {/* Hero / Intro */}
+      <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center bg-black">
+        <Image
+          src="/assets/images/bill8.jpg" // replace with your premium interior hero image
+          alt="Premium interior design showcase"
+          fill
+          className="object-cover brightness-[0.65]"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 text-center text-white px-6 max-w-5xl">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+            Our Services
+          </h1>
+          <p className="text-xl md:text-2xl font-light max-w-3xl mx-auto">
+            Strategic design that balances function, elegance, and lasting value.
+          </p>
+        </div>
+      </section>
+
+      {/* Three-column services breakdown */}
+      <section className="py-6 md:py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-primary mb-4 md:mb-10">
+            Our Core Services
+          </h2>
+          {/* Service 1 */}
+          <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-6 md:gap-12">
+           
+            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                Interior Design & Styling
+              </h3>
+              <p className="text-secondary mb-6">
+                We provide bespoke interior design and styling services tailored to your space, lifestyle, and vision. From initial concept through to final execution, we create harmonious, functional, and elegant environments that elevate everyday living while delivering long-term value.
+              </p> 
+            </div>
+ 
+            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                Space Planning & Consultation
+              </h3>
+              <p className="text-secondary mb-6">
+                Strategic planning to optimize layout, flow, and functionality. Our consultations provide clarity, direction, and professional insight for your project.
+              </p> 
+            </div>
+ 
+            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                Event Styling
+              </h3>
+              <p className="text-secondary mb-6">
+                Luxury event styling for intimate gatherings and grand occasions. We design cohesive, elegant environments that leave lasting impressions.
+              </p> 
+            </div>
+          </div>
+          {/* <div className="grid md:grid-cols-3 gap-10 md:gap-12">
+           
+            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                Interior Design
+              </h3>
+              <p className="text-secondary mb-6">
+                Comprehensive space planning, material curation, lighting design, and custom detailing that transform any environment into a functional, elegant, and personal sanctuary.
+              </p>
+              <ul className="space-y-3 text-secondary">
+                <li>• Space optimization & layout planning</li>
+                <li>• Color, texture & material selection</li>
+                <li>• 3D visualization & renders</li>
+                <li>• Custom joinery & millwork</li>
+              </ul>
+            </div>
+ 
+            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                Furniture & Styling
+              </h3>
+              <p className="text-secondary mb-6">
+                Bespoke furniture sourcing, custom pieces, and artful styling that complete the vision — combining comfort, durability, and aesthetic harmony.
+              </p>
+              <ul className="space-y-3 text-secondary">
+                <li>• Curated premium collections</li>
+                <li>• Custom upholstery & fabrication</li>
+                <li>• Art, accessories & soft furnishings</li>
+                <li>• Seasonal & event styling</li>
+              </ul>
+            </div>
+ 
+            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                Consultation & Project Management
+              </h3>
+              <p className="text-secondary mb-6">
+                End-to-end support from initial concept through execution — ensuring timelines, quality, and budget alignment with zero compromise on excellence.
+              </p>
+              <ul className="space-y-3 text-secondary">
+                <li>• Initial consultation & brief</li>
+                <li>• Vendor coordination & site supervision</li>
+                <li>• Timeline & budget management</li>
+                <li>• Post-completion support</li>
+              </ul>
+            </div>
+          </div> */}
+
+          {/* Call to action at bottom */}
+          <div className="text-center mt-8 md:mt-10">
+            <Link
+              href="/contact"
+              className="inline-block bg-accent text-primary px-8 md:py-3 py-1 rounded-full font-semibold uppercase tracking-wider md:text-lg text-md hover:bg-accent/90 transition shadow-xl"
+            >
+              Book a Consultation
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Two-column: Image left + Content right */}
+      <section className="py-8 md:py-12">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left: Image */}
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-2xl">
+              <Image
+                src="/assets/images/bill9.jpg" // premium interior project photo
+                alt="Strategic interior design in progress"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Right: Text content */}
+            <div className="space-y-8">
+              <h2 className="text-3xl md:text-5xl font-bold text-primary tracking-tight">
+                Designed with Purpose
+              </h2>
+              <p className="text-lg md:text-xl text-secondary leading-relaxed">
+                At Billberry Blue, we believe design is not decoration — it is a strategic expression of how you live, work, and experience comfort. Every project begins with understanding your lifestyle, needs, and vision.
+              </p>
+              <p className="text-lg md:text-xl text-secondary leading-relaxed">
+                We combine thoughtful spatial planning, premium material selection, and precise execution to create spaces that are functional, timeless, and engineered to increase the long-term value of your property.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-block bg-accent text-primary md:px-10 px-6 py-4 rounded-full font-semibold uppercase tracking-wider hover:bg-accent/90 transition shadow-lg"
+              >
+                Start Your Project
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+ 
+       {/* New Section 1: Why Choose Billberry Blue   */}
+      <section className="py-6 md:py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-primary mb-6 md:mb-10">
+            Why Billberry Blue
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+            {[
+              {
+                icon: '🎯',
+                title: 'Strategic Design',
+                desc: 'Every decision is intentional — aligned with how the space will truly be used.',
+              },
+              {
+                icon: '🔨',
+                title: 'Craftsmanship & Quality',
+                desc: 'Precision execution with trusted artisans and premium materials that last.',
+              },
+              {
+                icon: '🤝',
+                title: 'True Collaboration',
+                desc: 'You are a partner throughout — your vision, expertly guided and executed.',
+              },
+              {
+                icon: '∞',
+                title: 'Timeless Aesthetic',
+                desc: 'Modern elegance that endures beyond trends and increases asset value.',
+              },
+            ].map((item, idx) => (
+              <div key={idx} className="text-center">
+                <div className="text-2xl md:text-5xl md:mb-4 mb-1">{item.icon}</div>
+                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">{item.title}</h3>
+                <p className="text-secondary text-base md:text-lg">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Four-column image showcase */}
+      <section className="py-8 md:py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-primary mb-4 md:mb-16">
+            Our Craft in Action
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            {[
+              { src: '/assets/images/bill1.jpg', label: 'Consultation & Discovery' },
+              { src: '/assets/images/bill5.jpg', label: 'Concept Development' },
+              { src: '/assets/images/bill6.jpg', label: 'Design & Styling' },
+              { src: '/assets/images/bill7.jpg', label: 'Execution & Delivery' },
+            ].map((item, idx) => (
+              <div key={idx} className="group relative aspect-square rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src={item.src}
+                  alt={item.label}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6 text-white text-center">
+                  <p className="text-lg md:text-xl font-semibold">{item.label}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section> 
+      
+      {/* // === New Section 2: Detailed Design Process === */}
+      <section className="py-8 md:py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-primary mb-12 md:mb-16">
+            Our Proven Process
+          </h2>
+
+          <div className="space-y-8 md:space-y-18">
+            {[
+              {
+                step: '01',
+                title: 'Consultation & Discovery',
+                desc: 'Understanding your vision and objectives',
+              },
+              {
+                step: '02',
+                title: 'Concept Development',
+                desc: 'Translating ideas into refined design concepts.',
+              },
+              {
+                step: '03',
+                title: 'Design & Styling',
+                desc: 'Curating materials, furnishings, and finishes.',
+              },
+              {
+                step: '04',
+                title: 'Execution & Delivery',
+                desc: 'Bringing the design to life with precision',
+              },
+               
+            ].map((step, idx) => (
+              <div key={idx} className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+                <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-full bg-accent flex items-center justify-center text-primary text-3xl md:text-4xl font-bold">
+                  {step.step}
+                </div>
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">{step.title}</h3>
+                  <p className="text-secondary text-lg leading-relaxed">{step.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* // === New Section 4: Final CTA Banner === */}
+      <section className="py-10 md:py-14 bg-primary text-white">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            Let’s Create Something Exceptional
+
+          </h2>
+          <p className="text-xl md:text-2xl mb-10 md:mb-12 opacity-90">
+            We collaborate closely with our clients to deliver spaces that feel intentional, elevated, and timeless.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-block bg-accent text-primary px-8 py-2 rounded-full font-bold uppercase tracking-wider text-m md:text-xl hover:bg-accent/90 transition shadow-2xl"
+          >
+            Start Your Project
+          </Link>
+        </div>
+         
+      </section>
+
+      
+      {/* // === New Section 3: Testimonials === */}
+      {/* <section className="pt-8 md:pt-8 md:py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-primary mb-12 md:mb-16">
+            What Our Clients Say
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+            {[
+              {
+                quote: "Billberry Blue turned our outdated space into a functional masterpiece that feels truly ours. The attention to detail is unmatched.",
+                author: "Dr. & Mrs. Adebayo, Abuja",
+              },
+              {
+                quote: "Working with them was seamless — they listened, challenged ideas when needed, and delivered beyond expectations. Our home now feels like an investment.",
+                author: "Mr. Chukwu, Lagos",
+              },
+              {
+                quote: "Professional, creative, and reliable. The project finished on time and the quality speaks for itself. Highly recommended.",
+                author: "Corporate Client, Victoria Island",
+              },
+            ].map((testimonial, idx) => (
+              <div key={idx} className="bg-gray-50 p-8 md:p-10 rounded-2xl shadow-lg">
+                <p className="text-secondary italic text-lg mb-6 leading-relaxed">"{testimonial.quote}"</p>
+                <p className="font-semibold text-primary">{testimonial.author}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section> */}
+    </main>
+  );
+}
