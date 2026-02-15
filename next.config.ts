@@ -1,23 +1,21 @@
-import type { NextConfig } from "next";
-
-// const nextConfig: NextConfig = {
-//   images: {
-//     remotePatterns: [
-//       {
-//         protocol: "https",
-//         hostname: "images.unsplash.com",
-//         pathname: "/**",
-//       },
-//       {
-//         protocol: "https",
-//         hostname: "cdn.example.com",
-//         pathname: "/images/**",
-//       },
-//     ],
-//   },
-// };
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  swcMinify: false,          // ← this line disables the problematic SWC binary
+  images: {
+     
+    qualities: [75, 85],
+ 
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
+      },
+      
+    ],
+  },
+
+  
+  swcMinify: false,
 };
 
 export default nextConfig;
