@@ -8,7 +8,7 @@ export default function ServicesPage() {
       {/* Hero / Intro */}
       <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center bg-black">
         <Image
-          src="/assets/images/bill8.jpg" // replace with your premium interior hero image
+          src="/assets/images/bill8.jpg"  
           alt="Premium interior design showcase"
           fill
           className="object-cover brightness-[0.65]"
@@ -61,54 +61,7 @@ export default function ServicesPage() {
               </p> 
             </div>
           </div>
-          {/* <div className="grid md:grid-cols-3 gap-10 md:gap-12">
-           
-            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-                Interior Design
-              </h3>
-              <p className="text-secondary mb-6">
-                Comprehensive space planning, material curation, lighting design, and custom detailing that transform any environment into a functional, elegant, and personal sanctuary.
-              </p>
-              <ul className="space-y-3 text-secondary">
-                <li>• Space optimization & layout planning</li>
-                <li>• Color, texture & material selection</li>
-                <li>• 3D visualization & renders</li>
-                <li>• Custom joinery & millwork</li>
-              </ul>
-            </div>
- 
-            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-                Furniture & Styling
-              </h3>
-              <p className="text-secondary mb-6">
-                Bespoke furniture sourcing, custom pieces, and artful styling that complete the vision — combining comfort, durability, and aesthetic harmony.
-              </p>
-              <ul className="space-y-3 text-secondary">
-                <li>• Curated premium collections</li>
-                <li>• Custom upholstery & fabrication</li>
-                <li>• Art, accessories & soft furnishings</li>
-                <li>• Seasonal & event styling</li>
-              </ul>
-            </div>
- 
-            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-                Consultation & Project Management
-              </h3>
-              <p className="text-secondary mb-6">
-                End-to-end support from initial concept through execution — ensuring timelines, quality, and budget alignment with zero compromise on excellence.
-              </p>
-              <ul className="space-y-3 text-secondary">
-                <li>• Initial consultation & brief</li>
-                <li>• Vendor coordination & site supervision</li>
-                <li>• Timeline & budget management</li>
-                <li>• Post-completion support</li>
-              </ul>
-            </div>
-          </div> */}
-
+         
           {/* Call to action at bottom */}
           <div className="text-center mt-8 md:mt-10">
             <Link
@@ -163,34 +116,61 @@ export default function ServicesPage() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-primary mb-6 md:mb-10">
             Why Billberry Blue
           </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+ 
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {[
               {
-                icon: '🎯',
+                icon: (
+                  <svg className="w-12 h-12 md:w-14 md:h-14 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93s3.06-7.44 7-7.93V17.93zm2-13.86c3.94.49 7 3.85 7 7.93s-3.06 7.44-7 7.93V4.07z"/>
+                  </svg>
+                ),
                 title: 'Strategic Design',
                 desc: 'Every decision is intentional — aligned with how the space will truly be used.',
               },
               {
-                icon: '🔨',
+                icon: (
+                  <svg className="w-12 h-12 md:w-14 md:h-14 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+                  </svg>
+                ),
                 title: 'Craftsmanship & Quality',
                 desc: 'Precision execution with trusted artisans and premium materials that last.',
               },
               {
-                icon: '🤝',
+                icon: (
+                  <svg className="w-12 h-12 md:w-14 md:h-14 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                  </svg>
+                ),
                 title: 'True Collaboration',
                 desc: 'You are a partner throughout — your vision, expertly guided and executed.',
               },
               {
-                icon: '∞',
+                icon: (
+                  <svg className="w-12 h-12 md:w-14 md:h-14 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                ),
                 title: 'Timeless Aesthetic',
                 desc: 'Modern elegance that endures beyond trends and increases asset value.',
               },
             ].map((item, idx) => (
-              <div key={idx} className="text-center">
-                <div className="text-2xl md:text-5xl md:mb-4 mb-1">{item.icon}</div>
-                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">{item.title}</h3>
-                <p className="text-secondary text-base md:text-lg">{item.desc}</p>
+              <div key={idx} className="flex flex-col items-center text-center group">
+                {/* Centered icon with hover scale */}
+                <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300 ease-out">
+                  {item.icon}
+                </div>
+
+                {/* Title with hover accent color */}
+                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 group-hover:text-accent transition-colors duration-300">
+                  {item.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-secondary text-base md:text-lg px-4 max-w-xs">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
