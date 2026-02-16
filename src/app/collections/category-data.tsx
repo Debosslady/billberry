@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CategoryPageParams } from '@/types/interfaces';
 
-// Static data for each collection (you can move this to a separate file later)
+ 
 const collectionData = {
   'living-rooms': {
     title: 'Living Rooms',
@@ -63,8 +63,7 @@ const collectionData = {
   // Add more categories here as needed
 };
 
-// export default async function CollectionPage({ params }: { params: Promise<{ category: string }> }) {
-//   const { category } = await params;
+ 
 export default async function CategoryPage({ params }: CategoryPageParams) {
   const { category } = await params;
 
@@ -76,7 +75,7 @@ export default async function CategoryPage({ params }: CategoryPageParams) {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* Hero Header */}
+      
       <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center bg-black">
         <Image
           src={data.images[0] || '/assets/images/placeholder.jpg'}
@@ -121,7 +120,7 @@ export default async function CategoryPage({ params }: CategoryPageParams) {
             </p>
           )}
 
-          {/* CTA */}
+           
           <div className="text-center mt-12 md:mt-16">
             <Link
               href="/contact"

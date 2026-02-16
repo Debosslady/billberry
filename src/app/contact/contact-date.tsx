@@ -121,7 +121,7 @@ export default function ContactPage() {
                 <p>No 78 Aba Road Opp Craft Centre beside Wema bank Port Harcourt</p>
               </div>
 
-              {/* Email */}
+               
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-4 flex items-center">
                   <span className="text-accent text-2xl mr-3">✉️</span>

@@ -6,10 +6,10 @@ import Link from 'next/link';
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* Hero / Brand Statement */}
+    
       <section className="relative h-[70vh] md:h-[80vh] flex items-center justify-center bg-black">
         <Image
-          src="/assets/images/bill9.jpg" // Use a moody, high-end craftsmanship or space image
+          src="/assets/images/bill9.jpg"  
           alt="Bilberry Blue refined design in motion"
           fill
           className="object-cover brightness-[0.70]"
@@ -106,8 +106,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Final CTA */}
+ 
       <section className="py-20 md:py-28 bg-primary text-white">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
