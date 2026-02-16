@@ -97,7 +97,7 @@ export default function Footer() {
               <div className="flex space-x-8 mb-6">
                 <p className="text-white/90">Follow us:</p>
                 <a 
-                  href=" " 
+                  href="" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-accent hover:text-white transition text-2xl"
@@ -130,8 +130,7 @@ export default function Footer() {
               <li><Link href="/" className="hover:text-accent transition">Home</Link></li>
               <li><Link href="/services" className="hover:text-accent transition">Services</Link></li>
               <li><Link href="/projects" className="hover:text-accent transition">Projects</Link></li>
-              <li><Link href="/about" className="hover:text-accent transition">About us</Link></li>
-              <li><Link href="/process" className="hover:text-accent transition">Process</Link></li>
+              <li><Link href="/about" className="hover:text-accent transition">About us</Link></li> 
               <li><Link href="/contact" className="hover:text-accent transition">Contact us</Link></li>
             </ul>
           </div>
@@ -142,13 +141,13 @@ export default function Footer() {
               Shopping & Policies
             </h3>
             <ul className="space-y-2 text-sm md:text-base">
-              <li><Link href="/how-to-order" className="hover:text-accent transition">How to Order</Link></li>
-              <li><Link href="/payment-methods" className="hover:text-accent transition">Payment Methods</Link></li>
-              <li><Link href="/shipping-info" className="hover:text-accent transition">Shipping Information</Link></li>
-              <li><Link href="/return-policy" className="hover:text-accent transition">Return Policy</Link></li>
-              <li><Link href="/order-tracking" className="hover:text-accent transition">Order Tracking</Link></li>
-              <li><Link href="/privacy-policy" className="hover:text-accent transition">Privacy Policy</Link></li>
-              <li><Link href="/terms-conditions" className="hover:text-accent transition">Terms & Conditions</Link></li>
+              <li><Link href=" " className="hover:text-accent transition">How to Order</Link></li>
+              <li><Link href=" " className="hover:text-accent transition">Payment Methods</Link></li>
+              <li><Link href=" " className="hover:text-accent transition">Shipping Information</Link></li>
+              <li><Link href=" " className="hover:text-accent transition">Return Policy</Link></li>
+              <li><Link href=" " className="hover:text-accent transition">Order Tracking</Link></li>
+              <li><Link href=" " className="hover:text-accent transition">Privacy Policy</Link></li>
+              <li><Link href=" " className="hover:text-accent transition">Terms & Conditions</Link></li>
             </ul>
           </div>
 
@@ -164,9 +163,9 @@ export default function Footer() {
               Copyright © 2026 Billberry Blue. All Rights Reserved.
             </p>
             <div className="text-sm text-gray-500 space-x-4">
-              <Link href="/privacy-policy" className="hover:text-accent transition">Privacy Policy</Link>
+              <Link href=" " className="hover:text-accent transition">Privacy Policy</Link>
               <span>|</span>
-              <Link href="/terms-conditions" className="hover:text-accent transition">Terms & Conditions</Link>
+              <Link href=" " className="hover:text-accent transition">Terms & Conditions</Link>
             </div>
           </div>
         </div>
